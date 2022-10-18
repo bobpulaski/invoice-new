@@ -26,4 +26,12 @@ Route::get('/index', function () {
     return view('index');
 })->middleware(['auth', 'verified'])->name('index');
 
+Route::get('/company', function () {
+    return view('company');
+})->middleware(['auth', 'verified'])->name('company');
+
+Route::get('/invoice', function () {
+    return view('invoice');
+})->middleware(['auth', 'verified'])->name('invoice');
+
 require __DIR__.'/auth.php';
