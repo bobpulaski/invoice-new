@@ -34,4 +34,6 @@ Route::get('/invoice', function () {
     return view('invoice');
 })->middleware(['auth', 'verified'])->name('invoice');
 
+
+
 require __DIR__.'/auth.php';

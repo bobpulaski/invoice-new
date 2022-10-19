@@ -1,7 +1,7 @@
 @extends('index')
 
 @section('content')
-    <livewire:company />
+    <livewire:company-table />
 @endsection
 
 
